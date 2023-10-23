@@ -1,0 +1,137 @@
+@import "./nullstyle";
+
+.wrapper {
+  display: flex;
+  height: 100%;
+  width: 100%;
+
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #3eecac;
+  background-image: linear-gradient(19deg, #3eecac 0%, #ee74e1 100%);
+}
+
+.header {
+  display: flex;
+  height: 10vh;
+  width: 100%;
+  padding: 0 15px;
+  justify-content: space-between;
+  background-color: #4158d0;
+  background-image: linear-gradient(43deg, #4158d0 0%, #c850c0 46%, #ffcc70 100%);
+}
+
+.logo {
+  width: 67px;
+  height: 67px;
+  border: 1px solid #000;
+  border-radius: 50%;
+  margin-left: 40px;
+  background: no-repeat center url(../img/—Pngtree—vector\ web\ search\ icon_3994948.png);
+  background-size: 100%;
+  background-color: #000;
+}
+.header-nav {
+  display: flex;
+  width: 500px;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 70px;
+  gap: 10px;
+}
+.nav-item {
+  display: flex;
+  justify-content: flex-end;
+  border: 1px solid #000;
+  width: 200px;
+  height: 30px;
+  background-color: #f4d03f;
+  background-image: linear-gradient(132deg, #f4d03f 0%, #16a085 100%);
+  border-radius: 9%;
+  transition: 1s;
+}
+.nav-item:hover {
+  box-shadow: 2px 3px 4px 2px #0ff;
+  background-color: #fad961;
+  background-image: linear-gradient(90deg, #fad961 0%, #f76b1c 100%);
+  width: 250px;
+}
+.main-body {
+  display: flex;
+  height: 80vh;
+  padding: 3vh;
+  flex-direction: column;
+}
+.main-body__row {
+  height: 34vh;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.main-body__small-item-image {
+  width: 100%;
+  height: 18vh;
+  border: 1px solid #000;
+  background: no-repeat 10% url(../img/neon-style-notebook--829402789.png);
+}
+.main-body__small-item {
+  height: 34vh;
+  width: 32%;
+  padding: 10px;
+  background-image: linear-gradient(
+    109.6deg,
+    rgba(13, 40, 32, 1) 11.2%,
+    rgba(41, 204, 126, 1) 100.2%
+  );
+}
+.main-body__small-item:hover {
+  box-shadow: 1px 1px 1px 1px rgb(255, 111, 0);
+}
+.main-body__small-item-text {
+  padding: 10px;
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
+  font-size: 13px;
+}
+.main-body__big-item {
+  height: 35vh;
+  width: 49%;
+  padding: 10px;
+  background-image: linear-gradient(
+    109.6deg,
+    rgba(13, 40, 32, 1) 11.2%,
+    rgba(41, 204, 126, 1) 100.2%
+  );
+}
+.main-body__big-item:hover {
+  box-shadow: 3px 1px 1px 1px rgb(255, 111, 0);
+}
+.main-body__big-img {
+  width: 100%;
+  height: 19vh;
+  background: no-repeat url(../img/neon-pipe---720071287.png);
+  background-size: 100%;
+}
+
+.main-body__big-text {
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
+  padding: 10px;
+  font-size: 13px;
+}
+
+@media screen and (max-width: 1200px) {
+  .wrapper {
+    max-width: 970px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .wrapper {
+    max-width: 750px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .wrapper {
+    max-width: 100%;
+  }
+}
