@@ -1,19 +1,23 @@
 @import "./nullstyle";
 
+body {
+  overflow-x: hidden;
+}
 .wrapper {
   display: flex;
   height: 100%;
   width: 100%;
-
+  overflow-x: hidden;
   flex-direction: column;
   justify-content: space-between;
+  align-items: center;
   background-color: #3eecac;
   background-image: linear-gradient(19deg, #3eecac 0%, #ee74e1 100%);
 }
 
 .header {
   display: flex;
-  height: 10vh;
+  height: 70px;
   width: 100%;
   padding: 0 15px;
   justify-content: space-between;
@@ -109,7 +113,7 @@
 .main-body__big-img {
   width: 100%;
   height: 19vh;
-  background: no-repeat url(../img/neon-pipe---720071287.png);
+  background: yellow;
   background-size: 100%;
 }
 
@@ -120,18 +124,12 @@
   font-size: 13px;
 }
 
-@media screen and (max-width: 1200px) {
-  .wrapper {
-    max-width: 970px;
+@media screen and (max-width: 1024px) {
+  .main-body {
+    width: 600px;
+    color: #c850c0;
   }
-}
-@media screen and (max-width: 992px) {
-  .wrapper {
-    max-width: 750px;
-  }
-}
-@media screen and (max-width: 767px) {
-  .wrapper {
-    max-width: 100%;
+  .header {
+    width: 100%;
   }
 }
